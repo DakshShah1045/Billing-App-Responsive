@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Generator</title>
+    <link rel="stylesheet" href="Styles/bill-make-style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Bill Generator</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="setup.html">Setup</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section">
+            <div class="container">
+                <h2>Create Your Bill</h2>
+                <form>
+                    
+                    <label for="product">Product:</label>
+                    <input type="text" id="product" name="product" required class="pro-name">
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" required class="pro-quantity">
+
+                    <label for="price">Price per Unit:</label>
+                    <input type="number" id="price" name="price" step="0.01" required class="pro-unit-price">
+
+                    <button type="submit" onclick="run()">Add Item</button>
+                    <br>
+                    <button onclick="generate()">Generate Bill</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Bill Generator Inc. Developed By: Daksh Hiral Shah</p>
+        </div>
+    </footer>
+    <script src="Scripts/company details.js"></script>
+    <script src="Scripts/bill-make.js"></script>
+    <script src="Scripts/items.js"></script>
+</body>
+</html>

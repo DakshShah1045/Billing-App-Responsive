@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Bill Layout</title>
+    <link rel="stylesheet" href="Styles/Bill.css">
+</head>
+<body>
+    <div class="bill-container">
+        <header class="bill-header">
+            <!--<img  alt="Company Logo" class="logo">
+            <div class="company-info">
+                <h1 class="company-name">Company Name</h1>
+                <p class="company-address">123 Business Rd, Suite 456<br>City, State, ZIP Code</p>
+                <p class="phone-email">Phone: (123) 456-7890 | Email: info@company.com</p>
+            </div>-->
+        </header>
+
+        <section class="customer-info">
+            <!--<h2>Customer Name: John Doe</h2>-->
+        </section>
+
+        <section class="bill-details">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>USP</th>
+                        <th>Total Price</th>
+                    </tr>
+                </thead>
+                <tbody class="bill-content">
+                    <!--<tr>
+                        <td>Product 1</td>
+                        <td>2</td>
+                        <td>USP 1</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Product 2</td>
+                        <td>1</td>
+                        <td>USP 2</td>
+                        <td>$50</td>
+                    </tr>-->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="bill-summary">
+            <div class="summary-item">
+                <span>Subtotal:</span>
+                <span class="sub-total"></span>
+            </div>
+            <div class="summary-item">
+                <span class="GST"></span>
+                <span class="gst-value"></span>
+            </div>
+            <div class="summary-item grandtotal">
+                <span>Grand Total:</span>
+                <span class="grand-total"></span>
+            </div>
+        </section>
+    </div>
+    <script src="Scripts/company details.js"></script>
+    <script src="Scripts/items.js"></script>
+    <script src="Scripts/customer details.js"></script>
+    <script src="Scripts/bill.js"></script>
+</body>
+</html>

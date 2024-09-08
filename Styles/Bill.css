@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light Blue Background */
+}
+
+.bill-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.bill-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #add8e6; /* Light Blue Border */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 120px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.company-info {
+    flex: 1;
+}
+
+.company-name {
+    margin: 0;
+    font-size: 28px;
+    color: #004d99; /* Darker Blue */
+}
+
+.company-address {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #333; /* Darker Gray */
+}
+
+.phone-email {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #333; /* Darker Gray */
+}
+
+.customer-info {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333; /* Darker Gray */
+}
+
+.bill-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.bill-details th, .bill-details td {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: #333; /* Darker Gray */
+}
+
+.bill-details th {
+    background-color: #e0f7fa; /* Light Cyan */
+}
+
+.bill-summary {
+    margin-top: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333; /* Darker Gray */
+}
+
+.summary-item span {
+    font-size: 16px;
+}
+
+.grandtotal {
+    font-weight: bold;
+    color: #ff4500; /* Orange Red */
+    border-top: 2px solid #ffebcd; /* Blanched Almond */
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .bill-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .company-info {
+        text-align: center;
+    }
+
+    .bill-details th, .bill-details td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .summary-item {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .company-name {
+        font-size: 24px;
+    }
+
+    .company-address, .phone-email, .customer-info {
+        font-size: 12px;
+    }
+
+    .summary-item {
+        font-size: 12px;
+    }
+}
